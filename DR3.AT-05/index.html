@@ -5,8 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DR3_AT</title>
     <script src="./script.js" defer></script>
+    <style>
+      .corVermelha {
+        color: red;
+      }
+      #card {
+        background-color: rgba(127, 255, 212, 0.425);
+        padding: 5px 10px;
+        width: fit-content;
+      }
+      .card {
+        background-color: rgba(255, 253, 127, 0.425) !important;
+      }
+      #card::before {
+        content: 'Card sem a classe "card"';
+      }
+      .card::before {
+        content: 'Card com a classe "card" adicionada!' !important;
+      }
+    </style>
   </head>
   <body style="background-color: rgba(182, 126, 21, 0.61)">
-    <h1>DR3_AT</h1>
+    <h1>Título</h1>
+    <div id="card"></div>
   </body>
 </html>
