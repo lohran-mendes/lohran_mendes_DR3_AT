@@ -5,8 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DR3_AT</title>
     <script src="./script.js" defer></script>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: fit-content;
+      }
+    </style>
   </head>
   <body style="background-color: rgba(182, 126, 21, 0.61)">
     <h1>DR3_AT</h1>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" />
+      <label for="email">E-mail:</label>
+      <input type="email" name="email" id="email" />
+      <label for="cpf">Cpf:</label>
+      <input type="text" name="cpf" id="cpf" />
+      <button disabled type="submit">Enviar</button>
+    </form>
+    <p>
+      Só será possível enviar o formulário caso todas as entradas estejam
+      corretas.
+    </p>
   </body>
 </html>
