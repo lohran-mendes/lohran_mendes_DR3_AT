@@ -12,16 +12,9 @@ let dadosValidados = false;
 form.addEventListener("input", ativaButton);
 
 function ativaButton() {
-  if (validaEntrada()) {
+  if (validaString(nome.value) && validaEmail() && validaCpf()) {
     botao.removeAttribute("disabled");
   } else botao.setAttribute("disabled", true);
-}
-
-function validaEntrada() {
-  if (validaString(nome.value) && validaEmail() && validaCpf()) {
-    return true;
-  }
-  return false;
 }
 
 function validaString(string) {

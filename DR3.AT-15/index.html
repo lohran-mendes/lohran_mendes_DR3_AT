@@ -5,8 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DR3_AT</title>
     <script src="./script.js" defer></script>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+        gap: 20px;
+      }
+      div:not(.checkbox) {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      #idade {
+        min-width: 22ch;
+      }
+    </style>
   </head>
   <body style="background-color: rgba(182, 126, 21, 0.61)">
     <h1>DR3_AT</h1>
+    <form action="">
+      <div>
+        <label for="nome">Nome:</label
+        ><input type="text" id="nome" placeholder="José" />
+      </div>
+      <div>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" max="99" min="0" />
+      </div>
+      <div>
+        <label for="descricao">Descricao:</label
+        ><input type="text" id="descricao" placeholder="Escreva sobre você" />
+      </div>
+      <label for="interesses">Interesses:</label>
+      <div class="checkbox">
+        <input type="checkbox" name="games" id="games" checked />
+        <label for="games">Games</label>
+        <input type="checkbox" name="ti" id="ti" />
+        <label for="ti">Ti</label>
+      </div>
+      <div>
+        <label for="estados">Estados:</label>
+        <select name="estados" id="estados">
+          <option value="RJ">RJ</option>
+          <option value="SP">SP</option>
+          <option value="MG">MG</option>
+          <option value="ES">ES</option>
+        </select>
+      </div>
+    </form>
   </body>
 </html>
