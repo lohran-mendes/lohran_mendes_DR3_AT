@@ -13,7 +13,7 @@ const enderecoDaEscola = {
 const escola = {
   numeroDeAlunos: 500,
   nomeDoDiretor: "Diretor Joãozinho",
-  anoDeFundacao: "2000",
+  anoDeFundacao: 2000,
   endereco: enderecoDaEscola,
 };
 
